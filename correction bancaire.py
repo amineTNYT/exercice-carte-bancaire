@@ -1,4 +1,5 @@
 from numpy import array
+
 def saisir(min, max):
     n = int(input("Donner la taille du tableau (entre " + str(min) + " et " + str(max) + ") = "))
     while not (min <= n <= max):
@@ -28,7 +29,7 @@ def inverse(ch):
     return ch0
 
 def calcul(ch1):
-    ch = inverse(ch1)  # Correction: ch1 au lieu de ch
+    ch = inverse(ch1) 
     total = 0
     
     for i in range(len(ch)):
@@ -67,3 +68,4 @@ affichage(carte, n)
 
 # créé par amineTNYT
 # github: amineTNYT
+
