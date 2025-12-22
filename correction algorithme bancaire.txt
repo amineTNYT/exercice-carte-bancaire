@@ -20,7 +20,7 @@
 
 Algorithme Problème_Cartes
 début
-    saisie(n,1,10)
+    saisir(n,1,10)
     remplir(t, n)
     former(carte, t, n)
     affichage(carte, n)
@@ -28,19 +28,19 @@ fin
 
                                                                             TDOG
                                 ┌──────────────────────────────────────────────────────────┐
-                                │               Objet              │      Nature / Type     │
+                                │               Objet              │      Nature / Type    │
                                 ├──────────────────────────────────────────────────────────┤
-                                │ t                                │ Tab14                  │
+                                │ t                                │ Tab14                 │
                                 ├──────────────────────────────────────────────────────────┤
-                                │ carte                            │ Tab15                  │
+                                │ carte                            │ Tab15                 │
                                 ├──────────────────────────────────────────────────────────┤
-                                │ n                                │ entier                 │
+                                │ n                                │ entier                │
                                 ├──────────────────────────────────────────────────────────┤
                                 │ saisir,remplir,former            │ procédure             │
-                                │  affichage                       │                        │
+                                │  affichage                       │                       │
                                 └──────────────────────────────────────────────────────────┘
 
-procédure saisie(@n:entier,mon,max)
+procédure saisir(@n:entier,min,max)
 début
     répéter
         écrire("Donner la taille du tableau (entre ", min, " et ", max, ") = ")
@@ -74,7 +74,7 @@ fin
 
 
 
-procédure remplir(@t : tab1, n : entier)
+procédure remplir(@t : tab1; n : entier)
 début
     pour i de 0 à n-1 faire
         répéter
@@ -142,7 +142,7 @@ fonction inverse(ch : chaîne):chaîne
 début
     ch0 ← ""
     pour i de 0 à long(ch)-1 faire
-        ch0 ← ch[i] + ch0
+          ch0 ← ch[i] + ch0
     fin pour
     retourner ch0
 fin                                                               TDOL
@@ -152,10 +152,10 @@ fin                                                               TDOL
                                 │ ch0, i                           │ chaîne, entier        │
                                 └──────────────────────────────────────────────────────────┘
                     
-procédure affichage(t : tab2, n : entier)
+procédure affichage(t : tab2 ; n : entier)
 début
     pour i de 0 à n-1 faire
-        écrire(t[i])
+         écrire(t[i])
     fin pour
 fin
 
