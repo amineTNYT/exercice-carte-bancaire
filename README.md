@@ -1,6 +1,6 @@
 # Tunisian Bank Card Number Validation Problem
 
-Contexte : Implémentation de l'algorithme de Luhn modifié avec inversion pour la validation de cartes bancaires tunisiennes.
+Contexte : Implémentation de l'algorithme de Luhn  pour la validation de cartes bancaires tunisiennes.
 
 Éléments techniques inclus :
 
